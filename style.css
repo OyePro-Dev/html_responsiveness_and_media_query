@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tbody {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(bg-intro-desktop.png);
+    font-family: Poppins;
+}
+
+main {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+}
+
+#left {
+    width: 50%;
+}
+
+#right {
+    width: 50%;
+    margin-left: 50px;
+}
+
+#left  h1 {
+     color: rgb(249, 252, 255);
+     font-family: Poppins;
+     font-weight: 700;
+     margin: 0px 30px 20px 0px;
+}
+
+#left p {
+    color: hsl(87, 94%, 99%);
+    font-family: poppins;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+#days {
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(87, 94%, 99%);
+    padding: 15px;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 2px hsl(0, 60%, 55%);
+}
+
+.days {
+    color: hsl(246, 25%, 77%);
+}
+
+#reg {
+    background-color: hsl(87, 94%, 99%);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 2px hsl(0, 60%, 55%);
+}
+
+#reg .reg {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 10px 20px;
+    font-weight: 700;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 2px;
+}
+
+#reg .reg:focus {
+  border: 1px solid hsl(248, 32%, 49%);
+}
+
+#reg .button {
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    color: hsl(87, 94%, 99%);
+    font-size: 10px;
+    font-weight: 700;
+    margin: 5px 0px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+#reg .button:hover {
+    cursor: pointer;
+}
+
+.terms {
+    width: 100%;
+    text-align: center;
+    font-size: 7px;
+    font-weight: 400;
+    padding: 5px 10px;
+    color: hsl(246, 25%, 77%);
+}
+
+#terms {
+  font-weight: 700;
+  color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 375px) {
+
+.tbody {
+  background-image: url(bg-intro-mobile.png);
+    }
+main {
+  flex-direction: column;
+  width: 90%;
+}
+
+#left {
+  width: auto;
+  margin: 0 0 40px 0;
+}
+
+#right {
+  width: auto;
+  margin: 0px;
+}
+
+#left h1 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0px 10px;
+  padding: 0px 20px;
+}
+
+#left p {
+ font-size: 15px;
+ text-align: center;
+ font-weight: 500;
+ padding: 10px 20px; 
+}
+
+#days {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px 60px;
+  margin: 0px 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 2px hsl(0, 60%, 55%); 
+}
+
+#reg {
+  margin: 0px 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 2px hsl(0, 60%, 55%);
+}
+
+#reg .reg {
+  padding: 15px 20px;
+  border-radius: 5px; 
+}
+
+#reg .button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.terms {
+  font-size: 12px;
+}
+
+}
