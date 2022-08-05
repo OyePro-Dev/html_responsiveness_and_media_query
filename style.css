@@ -64,21 +64,21 @@ main {
     box-shadow: 0px 3px 2px hsl(0, 60%, 55%);
 }
 
-#reg .reg {
+.form {
     width: 100%;
-    margin: 5px 0px;
+    margin: 7px 0px;
     padding: 10px 20px;
     font-weight: 700;
     outline: none;
     border: 1px solid hsl(0, 0%, 80%);
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
-#reg .reg:focus {
+.form:focus {
   border: 1px solid hsl(248, 32%, 49%);
 }
 
-#reg .button {
+.button {
     width: 100%;
     background-color: hsl(154, 59%, 51%);
     color: hsl(87, 94%, 99%);
@@ -88,9 +88,11 @@ main {
     padding: 10px 10px;
     border: none;
     border-radius: 3px;
+    outline: none;
+    box-shadow: 0px 2px 1px hsl(154, 59%, 51%);
 }
 
-#reg .button:hover {
+.button:hover {
     cursor: pointer;
 }
 
@@ -105,6 +107,30 @@ main {
 
 #terms {
   font-weight: 700;
+  color: hsl(0, 100%, 74%);
+}
+
+.errorMessage1, .errorMessage2, .errorMessage3, .errorMessage4 {
+  color: hsl(0, 100%, 74%);
+  visibility: hidden;
+  float: right;
+  margin-top: -2px;
+  margin-bottom: 7px;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.fname {
+  background: url(icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 95%;
+  background-size: 15px;
+  border: 2px solid hsl(0, 100%, 74%);
+  border-radius: 5px;
+}
+
+.email::placeholder {
   color: hsl(0, 100%, 74%);
 }
 
@@ -158,12 +184,12 @@ main {
   box-shadow: 0px 7px 2px hsl(0, 60%, 55%);
 }
 
-#reg .reg {
+.form {
   padding: 15px 20px;
   border-radius: 5px; 
 }
 
-#reg .button {
+.button {
   font-size: 14px;
   font-weight: 500;
   padding: 15px;

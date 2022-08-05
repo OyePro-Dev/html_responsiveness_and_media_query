@@ -21,17 +21,21 @@
             <p>Try it free 7 days <span class="days">then $20/mo. thereafter</span></p>
        </div>
        <div id="reg">
-          <form action="action.php" method="get">
-               <input type="text" name="Firtname" placeholder="First Name" class="reg">
-               <input type="text" name="lastname" placeholder="Last Name" class="reg">
-               <input type="email" name="emailaddress" placeholder="Email Address" class="reg">
-               <input type="password" name="password" placeholder="Password" class="reg">
-               <input type="button" name="button" value="CLAIM YOUR FREE TRIAL" class="button">
+          <form action="#">
+               <input type="text" name="firstname" placeholder="First Name" class="form" id="1">
+               <span class="span errorMessage1" id="1"></span>
+               <input type="text" name="lastname" placeholder="Last Name" class="form" id="2">
+               <span class="span errorMessage2" id="2"></span>            
+               <input type="email" name="email" placeholder="Email Address" class="form" id="3">
+               <span class="span errorMessage3" id="3"></span>            
+               <input type="password" name="password" placeholder="Password" class="form" id="4">
+               <span class="span errorMessage4" id="4"></span>
+               <input type="submit" value="CLAIM YOUR FREE TRIAL" class="button">
            </form>
            <p class="terms">By clicking the button are agreeing to our <span id="terms">Terms and Services</span></p>
        </div>
     </div>
   </main>  
-    
+    <script src="./script.js"></script>
 </body>
 </html>
